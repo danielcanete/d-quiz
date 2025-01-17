@@ -1,0 +1,367 @@
+{
+  "id": 1,
+  "slug": "do-or-make",
+  "title": "Do or Make?",
+  "questions": [
+    {
+      "id": 1,
+      "sentence": "... a comparison",
+      "explanation": "make a comparison",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "do"
+        },
+        {
+          "isCorrect": true,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sentence": "... a complaint",
+      "explanation": "make a complaint",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sentence": "... a job",
+      "explanation": "do a job",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "make"
+        },
+        {
+          "isCorrect": true,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sentence": "... a suggestion",
+      "explanation": "make a suggestion",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "sentence": "... damage",
+      "explanation": "do damage",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentence": "... harm",
+      "explanation": "do harm",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sentence": "... your best",
+      "explanation": "do your best",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "make"
+        },
+        {
+          "isCorrect": true,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sentence": "... an excuse",
+      "explanation": "make an excuse",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "sentence": "... a difference",
+      "explanation": "make a difference",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "sentence": "... someone a favor",
+      "explanation": "do someone a favor",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "sentence": "... a mess",
+      "explanation": "make a mess",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "sentence": "... a promise",
+      "explanation": "make a promise",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "sentence": "... research",
+      "explanation": "do research",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "sentence": "... right/wrong",
+      "explanation": "do right/wrong",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "sentence": "... a contribution",
+      "explanation": "make a contribution",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "sentence": "... a choice",
+      "explanation": "make a choice",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "sentence": "... an experiment",
+      "explanation": "do an experiment",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "sentence": "... sense",
+      "explanation": "make sense",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "sentence": "... business",
+      "explanation": "do business",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "sentence": "... an exception",
+      "explanation": "make an exception",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "sentence": "... an appointment",
+      "explanation": "make an appointment",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "sentence": "... progress",
+      "explanation": "make progress",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "sentence": "... your share",
+      "explanation": "do your share",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "make"
+        },
+        {
+          "isCorrect": true,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "sentence": "... time",
+      "explanation": "do time",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "do"
+        },
+        {
+          "isCorrect": false,
+          "text": "make"
+        }
+      ]
+    }
+  ]
+}
