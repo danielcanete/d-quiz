@@ -7,28 +7,10 @@ import {
   DialogTitle,
 } from '@shared/components/ui/dialog';
 
-interface QuizSummaryDialogContextType {
+const QuizSummaryDialogContext = createContext<{
   open: boolean;
   onOpenChange: (open: boolean) => void;
-}
-
-interface QuizSummaryDialogProps extends QuizSummaryDialogContextType {
-  children: React.ReactNode;
-}
-
-interface QuizSummaryDialogScoreProps {
-  children: React.ReactNode;
-}
-
-interface QuizSummaryDialogMistakesProps {
-  children: React.ReactNode;
-}
-
-interface QuizSummaryDialogFooterProps {
-  children: React.ReactNode;
-}
-
-const QuizSummaryDialogContext = createContext<QuizSummaryDialogContextType | null>(null);
+} | null>(null);
 
 const useQuizSummaryDialog = () => {
   const context = useContext(QuizSummaryDialogContext);
@@ -39,16 +21,16 @@ const useQuizSummaryDialog = () => {
 };
 
 // Main component
-export const QuizSummaryDialog: React.FC<QuizSummaryDialogProps> = ({
-  children,
-  open,
-  onOpenChange,
-}) => {
+const QuizSummaryDialog: React.FC<{
+  children: React.ReactNode;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}> = ({ children, open, onOpenChange }) => {
   return (
     <QuizSummaryDialogContext.Provider value={{ open, onOpenChange }}>
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent 
-          className="bg-white p-6 rounded-xl" 
+        <DialogContent
+          className="bg-white p-6 rounded-xl"
           onPointerDownOutside={(e) => e.preventDefault()}
         >
           <DialogHeader>
@@ -69,7 +51,9 @@ export const QuizSummaryDialog: React.FC<QuizSummaryDialogProps> = ({
 };
 
 // Score component
-export const QuizSummaryDialogScore: React.FC<QuizSummaryDialogScoreProps> = ({ children }) => {
+const QuizSummaryDialogScore: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
   useQuizSummaryDialog();
   return (
     <div className="text-center space-y-4">
@@ -82,7 +66,9 @@ export const QuizSummaryDialogScore: React.FC<QuizSummaryDialogScoreProps> = ({ 
 };
 
 // Mistakes component
-export const QuizSummaryDialogMistakes: React.FC<QuizSummaryDialogMistakesProps> = ({ children }) => {
+const QuizSummaryDialogMistakes: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
   useQuizSummaryDialog();
   return (
     <div className="text-center space-y-4">
@@ -95,11 +81,20 @@ export const QuizSummaryDialogMistakes: React.FC<QuizSummaryDialogMistakesProps>
 };
 
 // Footer component
-export const QuizSummaryDialogFooter: React.FC<QuizSummaryDialogFooterProps> = ({ children }) => {
+const QuizSummaryDialogFooter: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
   useQuizSummaryDialog();
   return (
     <div className="flex justify-center space-x-4">
       {children}
     </div>
   );
+};
+
+export {
+  QuizSummaryDialog,
+  QuizSummaryDialogScore,
+  QuizSummaryDialogMistakes,
+  QuizSummaryDialogFooter,
 };
