@@ -35,8 +35,6 @@ d-quiz
 ├─ bun.lockb
 ├─ components.json
 ├─ index.html
-├─ lib
-│  └─ utils.ts
 ├─ netlify.toml
 ├─ package.json
 ├─ postcss.config.js
