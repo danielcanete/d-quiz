@@ -2,6 +2,8 @@
 
 A React-based interactive quiz application that allows users to test their knowledge through various quiz categories.
 
+Demo: https://unrivaled-moxie-9baed1.netlify.app/
+
 ## Features
 
 - 🎯 Multiple quiz categories
@@ -33,8 +35,6 @@ d-quiz
 ├─ bun.lockb
 ├─ components.json
 ├─ index.html
-├─ lib
-│  └─ utils.ts
 ├─ netlify.toml
 ├─ package.json
 ├─ postcss.config.js
@@ -159,5 +159,7 @@ This project is configured for deployment on Netlify. The netlify.toml file incl
 Available Scripts
 
 `bun dev` - Start development server
+
 `bun run build` - Build for production
+
 `bun run lint` - Run ESLint
