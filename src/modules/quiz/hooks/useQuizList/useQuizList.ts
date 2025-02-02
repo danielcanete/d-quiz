@@ -1,13 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Quiz } from '@modules/quiz/interfaces/quiz.interface';
 
-interface UseQuizListReturn {
-  quizList: Quiz[];
-  loading: boolean;
-  error: Error | null;
-}
-
-export function useQuizList(): UseQuizListReturn {
+export function useQuizList() {
   const [quizList, setQuizList] = useState<Quiz[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);

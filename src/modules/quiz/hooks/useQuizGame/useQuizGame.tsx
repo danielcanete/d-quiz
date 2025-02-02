@@ -1,22 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Option, Quiz } from '@modules/quiz/interfaces/quiz.interface';
 
-interface UseQuizReturn {
-  quiz: Quiz | null | undefined;
-  isStarted: boolean;
-  currentQuestion: number | null;
-  score: number;
-  mistakes: number;
-  showAnswer: boolean;
-  selectedAnswer: Option | null;
-  showModal: boolean;
-  handleAnswer: (answer: Option) => void;
-  nextQuestion: () => void;
-  restartQuiz: () => void;
-  setShowModal: (show: boolean) => void;
-}
-
-export function useQuizGame(slug: string | undefined): UseQuizReturn {
+export function useQuizGame(slug: string | undefined) {
   const [quiz, setQuiz] = useState<null | Quiz>();
   const [isStarted, setIsStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState<number | null>(null);

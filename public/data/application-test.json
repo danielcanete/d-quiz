@@ -1,7 +1,7 @@
 {
-  "id": 1,
-  "slug": "do-or-make",
-  "title": "Do or Make?",
+  "id": 3,
+  "slug": "application-test",
+  "title": "Application test",
   "questions": [
     {
       "id": 1,
@@ -14,7 +14,7 @@
         },
         {
           "isCorrect": true,
-          "text": "make"
+          "text": "make (true)"
         }
       ]
     },
@@ -25,7 +25,7 @@
       "options": [
         {
           "isCorrect": true,
-          "text": "make"
+          "text": "make (true)"
         },
         {
           "isCorrect": false,

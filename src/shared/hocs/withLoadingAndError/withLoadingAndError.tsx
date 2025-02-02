@@ -1,4 +1,4 @@
-import React from 'react';
+import { FullPageLoading } from '@shared/components/FullPageLoading';
 
 interface WithLoadingAndErrorProps {
   loading: boolean;
@@ -12,11 +12,7 @@ export function withLoadingAndError<P extends object>(
     props: P & WithLoadingAndErrorProps
   ) {
     if (props.loading)
-      return (
-        <div className="flex justify-center items-center min-h-[200px]">
-          <p>Loading quizzes...</p>
-        </div>
-      );
+      return <FullPageLoading />;
 
     if (props.error)
       return (

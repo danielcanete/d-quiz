@@ -9,9 +9,9 @@ interface QuizCardProps {
 
 export const QuizCard: React.FC<QuizCardProps> = ({ quiz }) => (
   <Link to={appRoutes.quiz.replace(':slug', quiz.slug)}>
-    <Card className="hover:scale-105 transition-transform duration-200 cursor-pointer bg-secondary">
+    <Card className="bg-white p-6 rounded-3xl shadow-lg hover:animate-card-hover w-full animate-fade-in delay-150 cursor-pointer hover:scale-105 transition-transform duration-200">
       <CardHeader>
-        <CardTitle className="text-2xl text-primary">{quiz.title}</CardTitle>
+        <CardTitle className="text-lg md:text-xl xl:text-2xl text-primary">{quiz.title}</CardTitle>
       </CardHeader>
     </Card>
   </Link>

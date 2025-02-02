@@ -21,10 +21,5 @@ export interface Question {
 
 export interface Option {
   isCorrect: boolean;
-  text:      Text;
-}
-
-export enum Text {
-  Do = "do",
-  Make = "make",
+  text:      string;
 }

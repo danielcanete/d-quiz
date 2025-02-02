@@ -1,6 +1,9 @@
 import { Option, ValidatedQuiz } from '@modules/quiz/interfaces/quiz.interface';
 import { Card, CardContent, CardHeader } from '@shared/components/ui/card';
-import { QuizQuestion } from '../QuizQuestion';
+import { QuizSentence } from '../QuizSentence';
+import { QuizOptionList } from '../QuizOptionList';
+import { QuizAnswerFeedback } from '../QuizAnswerFeedback';
+import { QuizOptionButton } from '../QuizOptionButton';
 
 interface QuizBoardGameProps {
   quiz: ValidatedQuiz;
@@ -23,7 +26,7 @@ export const QuizBoardGame: React.FC<QuizBoardGameProps> = ({
   onAnswerSelect,
   onNext
 }) => (
-  <Card className="max-w-2xl mx-auto">
+  <Card className="max-w-2xl mx-auto rounded-3xl">
     <CardHeader>
       <div className="flex justify-between text-lg">
         <span>Score: {score}</span>
@@ -31,13 +34,21 @@ export const QuizBoardGame: React.FC<QuizBoardGameProps> = ({
       </div>
     </CardHeader>
     <CardContent>
-      <QuizQuestion
-        question={quiz.questions[currentQuestion]}
-        showAnswer={showAnswer}
-        selectedAnswer={selectedAnswer}
-        onAnswerSelect={onAnswerSelect}
-        onNext={onNext}
-      />
+      <QuizSentence>
+        {quiz.questions[currentQuestion].sentence}
+      </QuizSentence>
+      <QuizOptionList>
+        {quiz.questions[currentQuestion].options.map((option, index) => (
+          <QuizOptionButton
+            key={index}
+            option={option}
+            showAnswer={showAnswer}
+            selectedAnswerText={selectedAnswer?.text || null}
+            onClick={onAnswerSelect}
+          />
+        ))}
+      </QuizOptionList>
+      {selectedAnswer && <QuizAnswerFeedback selectedAnswer={selectedAnswer} onNext={onNext} />}
     </CardContent>
   </Card>
 );

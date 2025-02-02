@@ -1,4 +1,6 @@
+import { ComponentType } from 'react';
 import { Quiz, ValidatedQuiz } from '@modules/quiz/interfaces/quiz.interface';
+import { FullPageLoading } from '@shared/components/FullPageLoading';
 
 interface WithQuizLoadingProps {
   quiz: Quiz | null | undefined;
@@ -8,19 +10,15 @@ interface WithQuizLoadingProps {
 type WithoutLoading<T> = Omit<T, 'quiz' | 'currentQuestion'>;
 
 export function withQuizLoading<P extends { quiz: ValidatedQuiz, currentQuestion: number }>(
-  WrappedComponent: React.ComponentType<P>
+  WrappedComponent: ComponentType<P>
 ) {
   return function WithQuizLoadingComponent(
     props: WithoutLoading<P> & WithQuizLoadingProps
   ) {
     const { quiz, currentQuestion, ...rest } = props;
 
-    if (typeof quiz === 'undefined') {
-      return <div>Loading...</div>;
-    }
-
-    if (currentQuestion === null) {
-      return <div>Loading...</div>;
+    if (typeof quiz === 'undefined' || currentQuestion === null) {
+      return <FullPageLoading />;
     }
 
     if (quiz === null || !quiz.questions) {

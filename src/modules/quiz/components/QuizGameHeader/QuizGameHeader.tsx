@@ -9,7 +9,7 @@ interface QuizHeaderProps {
 
 export const QuizGameHeader: React.FC<QuizHeaderProps> = ({ title }) => (
   <div className="flex items-center justify-between mb-6 max-w-2xl mx-auto">
-    <h1 className="text-2xl font-bold">{title || "Quiz"}</h1>
+    <h1 className="text-2xl font-bold">{title}</h1>
     <Button variant="ghost" className="flex items-center gap-2" asChild>
       <Link to={appRoutes.listQuiz}>
         <ChevronLeft className="w-4 h-4" />

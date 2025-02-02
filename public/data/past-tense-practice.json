@@ -1,0 +1,157 @@
+{
+  "id": 2,
+  "slug": "past-tense-practice",
+  "title": "Past Tense Practice",
+  "questions": [
+    {
+      "id": 1,
+      "sentence": "Have you ______ your lost dog yet?",
+      "explanation": "The correct answer is 'found' because the present perfect tense requires the past participle.",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "find"
+        },
+        {
+          "isCorrect": true,
+          "text": "found"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sentence": "She spoke too softly. I couldn't ______ her.",
+      "explanation": "The correct answer is 'hear' because the modal verb 'could' is followed by the base form of the verb.",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "hear"
+        },
+        {
+          "isCorrect": false,
+          "text": "heard"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sentence": "But we heard everything she ______.",
+      "explanation": "The correct answer is 'said' because it refers to something completed in the past.",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "say"
+        },
+        {
+          "isCorrect": true,
+          "text": "said"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sentence": "We went shopping and I ______ a new pair of jeans.",
+      "explanation": "The correct answer is 'bought' as it is the past tense of 'buy'.",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "buy"
+        },
+        {
+          "isCorrect": true,
+          "text": "bought"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "sentence": "Did you ______ well last night?",
+      "explanation": "The correct answer is 'sleep' because questions with 'did' use the base form of the verb.",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "sleep"
+        },
+        {
+          "isCorrect": false,
+          "text": "slept"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sentence": "I used to ______ a lot of money, but I don't make much now.",
+      "explanation": "The correct answer is 'make' because 'used to' is followed by the base form of the verb.",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "make"
+        },
+        {
+          "isCorrect": false,
+          "text": "made"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sentence": "We were really surprised when we ______ the game.",
+      "explanation": "The correct answer is 'won' because it refers to an action completed in the past.",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "win"
+        },
+        {
+          "isCorrect": true,
+          "text": "won"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sentence": "We thought we would ______ for sure.",
+      "explanation": "The correct answer is 'lose' because modal verbs like 'would' are followed by the base form of the verb.",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "lose"
+        },
+        {
+          "isCorrect": false,
+          "text": "lost"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "sentence": "Have you ever ______ a movie star?",
+      "explanation": "The correct answer is 'met' because the present perfect tense requires the past participle.",
+      "options": [
+        {
+          "isCorrect": false,
+          "text": "meet"
+        },
+        {
+          "isCorrect": true,
+          "text": "met"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "sentence": "Mum taught our sisters how to cook, but she didn't ______ us.",
+      "explanation": "The correct answer is 'teach' because questions with 'did' use the base form of the verb.",
+      "options": [
+        {
+          "isCorrect": true,
+          "text": "teach"
+        },
+        {
+          "isCorrect": false,
+          "text": "taught"
+        }
+      ]
+    }
+  ]
+}
