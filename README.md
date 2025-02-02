@@ -90,9 +90,11 @@ d-quiz
 │  │     │  ├─ index.ts
 │  │     │  ├─ useQuizGame
 │  │     │  │  ├─ index.ts
+│  │     │  │  ├─ useQuizGame.test.ts
 │  │     │  │  └─ useQuizGame.tsx
 │  │     │  └─ useQuizList
 │  │     │     ├─ index.ts
+│  │     │     ├─ useQuizList.test.ts
 │  │     │     └─ useQuizList.ts
 │  │     └─ interfaces
 │  │        └─ quiz.interface.ts
